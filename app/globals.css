@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* slider styles */
+.slick-dots li button::before {
+  width: 19.2px !important;
+  height: 12px !important;
+  color: transparent;
+  content: " " !important;
+  border-radius: 16px !important;
+  background-color: #202020 !important; /* Inactive dot color */
+  transition: width 0.3s ease;
+}
+
+.slick-dots li.slick-active {
+  width: 40px !important;
+  height: 12px !important;
+  border-radius: 16px !important;
+  background-color: #202020 !important; /* Inactive dot color */
+  transition: width 0.3s ease;
+}
+.slick-dots li.slick-active {
+  width: 60px; /* Expand active dot */
+  height: 12px; /* Expand active dot */
+  border-radius: 16px;
+  background-color: #202020; /* Active dot color */
+}
